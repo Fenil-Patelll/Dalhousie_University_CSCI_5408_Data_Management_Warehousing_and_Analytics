@@ -23,7 +23,7 @@ public class TransformationEngine {
     File[] listOfFiles = folder.listFiles((dir, name) -> name.startsWith("news_articles_") && name.endsWith(".txt"));
 
     if (listOfFiles != null) {
-        String connectionString = "mongodb+srv://fenil:fenilpatel61@atlascluster.pona6fu.mongodb.net/?retryWrites=true&w=majority";
+        String connectionString = "";
         MongoClient mongoClient = MongoClients.create(connectionString);
 
         for (File file : listOfFiles) {
